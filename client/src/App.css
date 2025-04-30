@@ -1,0 +1,183 @@
+.editorContainer {
+  background-color: #F3F3F3;
+}
+
+.editorContainer .ql-editor {
+  /* A4 size */
+  width: 21cm;
+  min-height: 29.7cm;
+  padding: 1in;
+  margin: 1rem;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+  background-color: white;
+  border-radius: 5px;
+}
+
+.editorContainer .ql-container.ql-snow {
+  border:none;
+  display: flex;
+  justify-content: center;
+}
+
+.editorContainer .ql-toolbar.ql-snow {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #F3F3F3;
+  border-top:2px solid rgb(203, 199, 199);
+  box-shadow:  0 0 5px 0 rgba(0,0,0,.5);
+}
+
+@page {
+  margin: 1in;
+}
+
+@media print {
+   body {
+    background: none;
+  }
+
+  .editorContainer .ql-editor {
+    width: 6.5in;
+    height: 9in;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    align-self: flex-start;
+  }
+
+  .editorContainer .ql-toolbar.ql-snow {
+    display: none;
+  }
+}
+
+.LandingPage {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-1 {
+  font-size: 18px;
+  padding: 4px 0;
+  margin-bottom: 10px;
+}
+
+.title-2 {
+  font-size: 18px;
+  padding: 4px 0;
+  margin-bottom: 8px;
+  margin-left: 5px;
+}
+
+.docs {
+  border: 1px solid rgb(212, 212, 212);
+  background-color: white;
+  height: 260px;
+  width: 190px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.docs:hover {
+  border-color: rgb(10, 136, 209);
+}
+
+.docs > img {
+  height: 85%;
+  width: 80%;
+  padding: 10px 0 10px 0;
+}
+
+.newdocs {
+  height: 200px;
+  width: 160px;
+  margin-top: 10px;
+}
+
+.newdocs > img {
+  height: 90%;
+  width: 80%;
+  padding: 15px 0 10px 0;
+}
+
+.docs > div {
+  width: 100%;
+  border-top: 1px solid rgb(212, 212, 212);
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.Docs-container-1 {
+  background-color: #F3F3F3;
+  padding: 15px 20px 20px 100px;
+}
+
+.Docs-container-2 {
+  padding: 15px 20px 20px 95px;
+}
+
+.Docs-container-2 > div {
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.Topbar {
+  display: flex;
+  gap: 330px;
+  align-items: center;
+  padding: 3px 0 2px 0;
+}
+
+.logodiv{
+  display: flex;
+  gap: 10px;
+  height: 50px;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  margin-left: 50px;
+  color: rgb(103, 103, 103);
+}
+
+.logodiv > img {
+  height: 75%;
+}
+
+.Searchbar {
+  height: 40px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border-radius: 7px;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.Searchbar > img {
+  height: 50%;
+}
+
+.Searchbar > input {
+  border: none;
+  height: 30px;
+  width: 500px;
+  font-size: 16px;
+}
+
+*:focus {
+  outline: none;
+}
